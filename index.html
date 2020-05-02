@@ -27,8 +27,27 @@
             <button id="close-button"><i class="fas fa-times"></i></button>
         </li>
     </nav>
+
     <header class="site_header" id="site_header">
         <div class="header_content contenedor">
+            <nav class="site_nav" id="site_nav">
+                <div class="inicio">
+                    <a href="#">
+                        <li>Inicio</li>
+                    </a>
+                </div>
+                <div class="opciones">
+                    <a href="#">
+                        <li>Acerca de mi</li>
+                    </a>
+                    <a href="#">
+                        <li>Portafolio</li>
+                    </a>
+                    <a href="#">
+                        <li>Contacto</li>
+                    </a>
+                </div>
+            </nav>
             <div class="boton_menu_movil" id="menu_movil">
                 <button id="btn_menu_movil"><i class="fas fa-hamburger"></i></button>
             </div>
@@ -43,6 +62,7 @@
                 <p class="tec">MySql</p>
                 <p class="tec">Jquery</p>
                 <p class="tec">JavaScript</p>
+                <p class="tec">PHP</p>
             </div>
         </div>
     </header>
@@ -92,23 +112,25 @@
     <section class="contacto" id="contacto">
         <div class="contacto_content contenedor" id="contacto_content">
             <h2>Contacto</h2>
-            <form action="gracias.html" method="post" autocomplete="off">
-                <div class="campo">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                </div>
-                <div class="campo">
-                    <input type="text" name="apellido" id="pellido" placeholder="Apellido">
-                </div>
-                <div class="campo">
-                    <input type="email" name="email" id="email" placeholder="Correo Electronico">
-                </div>
-                <div class="campo">
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                </div>
-                <div class="enviar">
-                    <input type="submit" id="btn-enviar" class="button" value="Enviar">
-                </div>
-            </form>
+            <div class="formulario_contacto">
+                <form action="gracias.html" method="post" autocomplete="off">
+                    <div class="campo">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre:">
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="apellido" id="pellido" placeholder="Apellido:">
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="email" id="email" placeholder="Correo Electronico:">
+                    </div>
+                    <div class="campo">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" id="btn-enviar" class="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <footer class="site_footer" id="site_footer">
