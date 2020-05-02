@@ -14,9 +14,10 @@ body{
 }
 /******Globales******/
 .contenedor{
-    max-width: 34rem;
+    max-width: 30rem;
     margin: 0 auto;
     width: 100%;
+    
 }
 img{
     max-width: 100%;
@@ -28,18 +29,247 @@ h1,h2,h3,h4{
 }
 h1{
     font-family: lato,sans-serif;
-    font-size: 11.5rem;
+    font-size: 5.7rem;
     font-weight: 700;
 }
 h2{
-   font-size: 1.8rem;
+   font-size: 3rem;
    font-weight: bold;
 }
+h3{
+    font-size: 2.4rem;
+}
 p{
-    font-size: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 15rem;
+    }
+    h2{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .contenedor{
+        max-width: 60rem ;
+    }
 }
 /******Utilidades******/
 
 /******Header******/
+body{
+    background-color: #0D0F1B;
+    position: relative;
+}
+.site_header{
+    position: relative;
+    
+}
+.boton_menu_movil{
+    padding: 2rem 0;
+    text-align: right;
+}
+#btn_menu_movil{
+    background-color: transparent;
+    border:none
+}
+#btn_menu_movil i{
+    color: #fff;
+    font-size: 2.7rem;
+}
+.personal{
+    color: #fff;
+}
+#alvarez{
+    text-align: center;
+}
+#conocimiento{
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 200;
+}
+@media (min-width: 768px){
+    #btn_menu_movil i{
+        font-size: 5rem;
+    }
+    #conocimiento{
+        font-size: 4rem;
+    }
+}
+.site_header::after{
+    content: '';
+    background-image: url(/img/figura.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 280px;
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3000;
+}
+.tecnologias{
+    width: 80%;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.tec{
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    color: #fff;
+}
+@media (min-width: 768px){
+    .tec{
+        font-size: 2rem;
+    }
+    .site_header::after{
+        width: 57rem;
+        height: 37rem;
+    }
+}
+.nav_movil{
+    background-color: rgba(144, 36, 33, 100%);
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: -50rem;
+    z-index: 1000;
+    padding-top: 5.5rem;
+}
+.nav_movil a{
+    text-decoration: none;
+    display: block;
+}
+.nav_movil a li{
+    list-style: none;
+    color: #fff;
+    font-size: 2.4rem;
+    padding-left: 3rem;
+    margin: 2.8rem 0;
+}
+.nav_movil li{
+    list-style: none;
+}
+.nav_movil li:first-of-type{
+    margin-top: 0;
+}
 
+.nav_movil button{
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-size: 2.4rem;
+}
+/***************Acerca de mi********************/
+.acerca_de_mi{
+    display: flex;
+    text-align: right;
+    color: #fff;
+    height: 30rem;
+    align-items: center;
+}
+/***************Portafolio********************/
+.portafolio_content{
+    color: #fff;
+}
+.contenedor_elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.elemento_portafolio{
+    margin: 3.5rem 0 1.75rem 0;
+    display: inline-block;
+    background-color: #902421;
+    
+}
+.elemento_portafolio h4{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.5rem 1rem;
+}
+.img_portafolio{
+    width: 11.5rem;
+    height: 10rem;
+    padding: 0 1rem 1rem 1rem;
+}
+.img_portafolio img{
+    width: 100%;
+}
+@media (min-width: 768px){
+    .elemento_portafolio h4{
+        font-size: 1.6rem;
+    }
+    .img_portafolio{
+        width: 23rem;
+        height: 19rem;
+        padding: 0 3rem 3rem 3rem;
+    }
+}
+/***************Footer********************/
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 1rem 0;
+}
+.footer_elemento,
+.footer_elemento p{
+    display: inline-block;
+    color: #fff;
+}
+/***************Contacto********************/
+.contacto_content{
+    padding: 6rem 0;
+    color: #fff;
+}
+.campo{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
 
+.campo input{
+    width: 100%;
+    border: none;
+    background-color: #902421;
+    padding: .5rem;
+}
+.campo input::placeholder,
+.campo textarea::placeholder{
+    color: #0D0F1B;
+}
+.campo textarea{
+    width:100%;
+    border: none;
+    background-color: #902421;
+    padding: .5rem;
+    resize: none;
+}
+.enviar{
+    margin-top: 2rem;
+    width: 100%;
+}
+.enviar input{
+    border: none;
+    background-color: #902421;
+    width: 100%;
+    padding: 1.5rem 0;
+    color: #fff;
+}
