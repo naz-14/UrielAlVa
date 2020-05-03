@@ -5,6 +5,8 @@ html{
 }
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -81,6 +83,7 @@ p{
 }
 /******Utilidades******/
 
+
 /******Header******/
 body{
     background-color: #0D0F1B;
@@ -102,7 +105,10 @@ body{
 }
 .boton_menu_movil{
     padding: 2rem 0;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 #btn_menu_movil{
     background-color: transparent;
@@ -111,6 +117,20 @@ body{
 #btn_menu_movil i{
     color: #fff;
     font-size: 2.7rem;
+}
+.boton_menu_movil p{
+    color: #fff;
+    float: left;
+    opacity: 0;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    
+}
+@media (min-width: 768px){
+    .boton_menu_movil p{
+        font-size: 3rem;
+    }
 }
 .personal{
     color: #fff;
@@ -286,6 +306,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        flex-grow: 0;
     }
     .site_header::after{
         background-position: top left;
@@ -298,6 +319,47 @@ body{
         width: 60%;
     }
 }
+.fixed{
+    background-color: #0D0F1B;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    width: 100%;
+    position: fixed;
+    padding-right: 3.7rem;
+    border-bottom: 1px solid #61110e;
+    padding-left: 3.8rem;
+}
+.boton_menu_movil.fixed #uriel_bar{
+    opacity: 1;
+}
+@media (min-width: 768px){
+    .fixed{
+        padding-left: 8.4rem;
+        padding-right: 8.4rem;
+        border-bottom: 2px solid #61110e;
+    }
+}
+.fixed-esc{
+    position: fixed;
+    width: 100%;
+    background-color: #0D0F1B;
+    top: 0;
+    left: 0;
+    padding: 0 13.1rem;
+    border-bottom: 2px solid #61110e;
+}
+@media (min-width: 1440px){
+    .fixed-esc{
+        padding: 0 21.1rem;
+    }
+}
+@media (min-width: 1500px){
+    .fixed-esc{
+        padding: 0 26rem;
+    }
+}
+
 /***************Acerca de mi********************/
 .acerca_de_mi{
     display: flex;
