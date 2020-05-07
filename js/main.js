@@ -2,46 +2,72 @@
     'use strict';
     window.addEventListener('DOMContentLoaded',function(){
 
-        console.log("Todo redy");
 
-        const barra_movil = document.querySelector("#menu_movil");
-        const barra = document.querySelector("#site_nav");
-
-        if(window.matchMedia("(max-width: 991px)").matches){
-            window.addEventListener('scroll', fixedBar);
-        }
-        else{
-            window.addEventListener('scroll', fixedBarEsc);
-        }
+        const barra = document.querySelector('#site_nav');
+        //Barra fixed
+        window.addEventListener('scroll', fixedBar);
 
         function fixedBar(){
             if(window.scrollY>0){
-                barra_movil.classList.add('fixed');
-                document.querySelector('#site_header').style.paddingTop=barra_movil.offsetHeight+"px";
-                document.querySelector('#uriel_bar').classList.add('animated','bounceInUp');
- 
-            }
-            else{
-                document.querySelector('#site_header').style.paddingTop=0;
-                document.querySelector('#uriel_bar').classList.remove('animated','bounceInUp');
-                barra_movil.classList.remove('fixed');
-            }
-        }
-        function fixedBarEsc(){
-            if(window.scrollY>0){
-                document.querySelector('#oculta').style.height=barra.offsetHeight+"px";
-                barra.classList.add('fixed-esc');
-                document.querySelector('#inicio a li').innerHTML="Uriel A.";
+                document.querySelector('#uriel_bar').classList.remove('animated','bounceOutLeft')
+                barra.classList.add('fixed');
+                document.querySelector('.nav_container').style.height=barra.offsetHeight+"px";
+                document.querySelector('#uriel_bar').classList.add('animated','bounceInLeft');
                 
  
             }
             else{
-                document.querySelector('#oculta').style.height=0;
-                barra.classList.remove('fixed-esc');
-                document.querySelector('#inicio a li').innerHTML="Inicio";
+                document.querySelector('#uriel_bar').classList.add('animated','bounceOutLeft');
+                document.querySelector('.nav_container').style.height='';
+                barra.classList.remove('fixed');
+                document.querySelector('#uriel_bar').classList.remove('animated','bounceInLeft','duration-5s');
             }
         }
 
+        //navegacion movil
+        const hamburger = document.querySelector('#btn_menu_movil');
+        const barra_lateral = document.querySelector('.opciones');
+        const links = document.querySelectorAll('#contenedor_opciones a');
+        hamburger.addEventListener('click',menuMovil);
+        
+
+        function menuMovil() {
+            event.preventDefault();
+            event.stopPropagation();
+            barra_lateral.classList.toggle('activo');
+            barra.classList.toggle('activo');
+            if (barra_lateral.classList.contains('activo')) {
+                window.addEventListener('scroll',()=>{
+                    barra.classList.remove('activo');
+                    barra_lateral.classList.remove('activo');
+                });
+                document.body.addEventListener('click',clickDom);
+            }
+        }
+        //click fuera de nav
+        function clickDom(){
+            event.stopPropagation();
+                    if(event.target!= barra_lateral){
+                        console.log(event.target)
+                        barra.classList.remove('activo');
+                        barra_lateral.classList.remove('activo');
+                    }
+            document.body.removeEventListener('click',clickDom);
+        }
+
+        // navegacion con barra fixed
+        links.forEach(link => {
+            link.addEventListener('click',navegacion);
+        });
+        function navegacion(){
+            event.preventDefault();
+            var enlace = this.getAttribute('href');
+            window.scrollTo(0,(document.querySelector(enlace).offsetTop - barra.offsetHeight));
+            barra.classList.remove('activo');
+            barra_lateral.classList.remove('activo');
+        }
+
+        
 
     });
 })();

@@ -7,58 +7,47 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/esz8apu.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="nav_movil" id="nav_movil">
-        <a href="#">
-            <li>Inicio</li>
-        </a>
-        <a href="#">
-            <li>Acerca de mi</li>
-        </a>
-        <a href="#">
-            <li>Portafolio</li>
-        </a>
-        <a href="#">
-            <li>Contacto</li>
-        </a>
-        <li>
-            <button id="close-button"><i class="fas fa-times"></i></button>
-        </li>
-    </nav>
-
     <header class="site_header" id="site_header">
-        <div class="header_content contenedor">
-            <div class="nav_container">
-                <nav class="site_nav" id="site_nav">
+        <div class="nav_container">
+            <nav class="site_nav" id="site_nav">
+                <div class="contenedor" id="contenedor_opciones">
                     <div class="inicio" id="inicio">
-                        <a href="#">
+                        <a href="#site_header" id="inicio-bar">
                             <li>Inicio</li>
+                        </a>
+                        <a href="#site_header" >
+                            <li id="uriel_bar">Uriel A.</li>
                         </a>
                     </div>
                     <div class="opciones">
-                        <a href="#">
+                        <a href="#acerca_de_mi">
                             <li>Acerca de mi</li>
                         </a>
-                        <a href="#">
+                        <a href="#portafolio">
                             <li>Portafolio</li>
                         </a>
-                        <a href="#">
+                        <a href="#contacto">
                             <li>Contacto</li>
                         </a>
                     </div>
-                </nav>
-            </div>
-            <div class="oculta" id="oculta"></div>
-            <div class="boton_menu_movil" id="menu_movil">
-                <p id="uriel_bar">Uriel A.</p>
-                <button id="btn_menu_movil"><i class="fas fa-hamburger"></i></button>
-            </div>
+                    <div class="hamburguer" id="btn_menu_movil">
+                        <div class="linea1"></div>
+                        <div class="linea2"></div>
+                        <div class="linea3"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header_content contenedor">    
             <div class="personal">
-                    <h1 id="uriel">Uriel</h1>
-                    <h1 id="alvarez">Alvarez</h1>
+                    <div class="nombre">
+                        <h1 id="uriel">Uriel</h1>
+                        <h1 id="alvarez">Alvarez</h1>
+                    </div>
                     <p id="conocimiento">"El Conocimiento se comparte"</p>
             </div>
             <div class="tecnologias">
@@ -82,31 +71,31 @@
             <h2>Portafolio</h2>
             <div class="contenedor_elementos">
                 <div class="elemento_portafolio">
-                    <h4>lorem ipsum</h4>
+                    <h3>lorem ipsum</h3>
                     <div class="img_portafolio">
                         <img src="https://picsum.photos/500/450" alt="">
                     </div>
                 </div>
                 <div class="elemento_portafolio">
-                    <h4>lorem ipsum</h4>
+                    <h3>lorem ipsum</h3>
                     <div class="img_portafolio">
                         <img src="https://picsum.photos/500/450" alt="">
                     </div>
                 </div>
                 <div class="elemento_portafolio">
-                    <h4>lorem ipsum</h4>
+                    <h3>lorem ipsum</h3>
                     <div class="img_portafolio">
                         <img src="https://picsum.photos/500/450" alt="">
                     </div>
                 </div>
                 <div class="elemento_portafolio">
-                    <h4>lorem ipsum</h4>
+                    <h3>lorem ipsum</h3>
                     <div class="img_portafolio">
                         <img src="https://picsum.photos/500/450" alt="">
                     </div>
                 </div>
                 <div class="elemento_portafolio">
-                    <h4>lorem ipsum</h4>
+                    <h3>lorem ipsum</h3>
                     <div class="img_portafolio">
                         <img src="https://picsum.photos/500/450" alt="">
                     </div>
@@ -140,9 +129,9 @@
     </section>
     <footer class="site_footer" id="site_footer">
         <div class="footer_content contenedor" id="site_footer_content">
-            <div class="footer_elemento"><i class="fab fa-facebook-f"></i><p> fb.com/just.pwnaz</p></div>
-            <div class="footer_elemento"><i class="fab fa-twitter"></i><p> @UrielAlvarez</p></div>
-            <div class="footer_elemento"><i class="fab fa-instagram"></i><p> @pwnaz</p></div>
+            <div class="footer_elemento centro"><i class="fab fa-facebook-f"></i><p> fb.com/just.pwnaz</p></div>
+            <div class="footer_elemento centro"><i class="fab fa-twitter"></i><p> @UrielAlvarez</p></div>
+            <div class="footer_elemento centro"><i class="fab fa-instagram"></i><p> @pwnaz</p></div>
         </div>
     </footer>
 
