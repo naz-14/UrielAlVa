@@ -6,22 +6,51 @@
         const barra = document.querySelector('#site_nav');
         //Barra fixed
         window.addEventListener('scroll', fixedBar);
-
+        var i=0,j=0;
         function fixedBar(){
             if(window.scrollY>0){
-                document.querySelector('#uriel_bar').classList.remove('animated','bounceOutLeft')
+                if (i==0){
+                    j=0;
+                    document.querySelector('#inicio-uriel').classList.remove('bounceOutLeft');
+                    document.querySelector('#inicio-bar').classList.remove('bounceInLeft');
+                    document.querySelector('#inicio-bar').classList.add('animated','bounceOutLeft');
+                    document.querySelector('#inicio-bar').addEventListener('animationend',ponerClases);
+                    i++;
+                }
+                document.querySelector('#uriel_bar').classList.remove('bounceOutLeft');
                 barra.classList.add('fixed');
                 document.querySelector('.nav_container').style.height=barra.offsetHeight+"px";
                 document.querySelector('#uriel_bar').classList.add('animated','bounceInLeft');
-                
- 
             }
             else{
+                if(j==0){
+                    i=0;
+                    document.querySelector('#inicio-bar').classList.remove('bounceOutLeft');
+                    document.querySelector('#inicio-uriel').classList.remove('bounceInLeft');
+                    document.querySelector('#inicio-uriel').classList.add('bounceOutLeft');
+                    document.querySelector('#inicio-uriel').addEventListener('animationend',quitarClases);
+                    j++;
+                }
                 document.querySelector('#uriel_bar').classList.add('animated','bounceOutLeft');
                 document.querySelector('.nav_container').style.height='';
                 barra.classList.remove('fixed');
-                document.querySelector('#uriel_bar').classList.remove('animated','bounceInLeft','duration-5s');
+                document.querySelector('#uriel_bar').classList.remove('bounceInLeft','duration-5s');
+
             }
+        }
+        
+        function quitarClases(){
+                    document.querySelector('#inicio-uriel').classList.remove('activo');
+                    document.querySelector('#inicio-bar').classList.add('activo','animated','bounceInLeft');
+                document.querySelector('#inicio-uriel').removeEventListener('animationend',quitarClases);
+
+
+        }
+        function ponerClases(){
+                    document.querySelector('#inicio-bar').classList.remove('activo');
+                    document.querySelector('#inicio-uriel').classList.add('activo','animated','bounceInLeft');
+                document.querySelector('#inicio-bar').removeEventListener('animationend',ponerClases);
+
         }
 
         //navegacion movil
