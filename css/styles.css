@@ -50,7 +50,7 @@ p {
   font-size: 1rem;
   line-height: 1.5;
 }
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   h1 {
     font-size: 15rem;
   }
@@ -66,9 +66,10 @@ p {
   }
   .contenedor {
     max-width: 65rem;
+    min-width: 54.2rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .contenedor {
     max-width: 110rem;
   }
@@ -185,7 +186,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   .inicio li {
     font-size: 3rem;
   }
@@ -198,7 +199,7 @@ body {
     margin: 5rem 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .site_header {
     min-height: 70rem;
     height: 100vh;
@@ -307,7 +308,7 @@ body {
 .site_nav.fixed #uriel_bar {
   opacity: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   .site_nav.activo .hamburguer .linea1 {
     width: 6rem;
     transform: rotate(45deg) translateX(17px) translateY(1px);
@@ -363,7 +364,7 @@ body {
 .tecnologias p:last-of-type {
   margin-right: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   .personal #conocimiento {
     font-size: 4.1rem;
   }
@@ -375,7 +376,7 @@ body {
     margin-right: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .personal {
     display: flex;
     flex-direction: column;
@@ -426,7 +427,7 @@ body {
   height: 30rem;
   align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .acerca_de_mi {
     min-height: 80rem;
   }
@@ -450,7 +451,7 @@ body {
 .img_portafolio {
   margin-top: 2.5rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .contenedor_elementos {
     display: flex;
     justify-content: space-around;
@@ -478,7 +479,7 @@ body {
   display: inline-block;
   color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   .footer_content {
     padding: 2rem 0;
   }
@@ -494,7 +495,7 @@ body {
     margin-right: 1rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .footer_elemento {
     display: flex;
     align-content: center;
@@ -567,7 +568,7 @@ body {
   background-color: #61110e;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .contacto {
     margin-bottom: 5rem;
   }
