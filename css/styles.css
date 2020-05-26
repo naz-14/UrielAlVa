@@ -71,33 +71,16 @@ p {
 }
 @media (min-width: 1200px) {
   .contenedor {
-    max-width: 110rem;
+    max-width: 120rem;
   }
   h1 {
-    font-size: 16.5rem;
+    font-size: 13.5rem;
   }
   h2 {
     font-size: 8rem;
   }
   p {
     font-size: 2.8rem;
-  }
-}
-@media (min-width: 1500px) {
-  .contenedor {
-    max-width: 140rem;
-  }
-  h1 {
-    font-size: 18rem;
-  }
-  h2 {
-    font-size: 12rem;
-  }
-  h3 {
-    font-size: 3.8rem;
-  }
-  p {
-    font-size: 3.8rem;
   }
 }
 body {
@@ -182,9 +165,10 @@ body {
   transition: all 0.5s ease;
 }
 .header_content {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 88vh;
+  height: 88vh;
 }
 @media (min-width: 450px) {
   .inicio li {
@@ -201,7 +185,7 @@ body {
 }
 @media (min-width: 1200px) {
   .site_header {
-    min-height: 70rem;
+    min-height: 80rem;
     height: 100vh;
   }
   .hamburguer {
@@ -274,14 +258,6 @@ body {
   .opciones li:hover {
     cursor: pointer;
     color: #61110e;
-  }
-}
-@media (min-width: 1500px) {
-  .inicio #inicio-bar li {
-    font-size: 5rem;
-  }
-  .opciones li {
-    font-size: 5rem;
   }
 }
 /***************interaccion********************/
@@ -381,42 +357,42 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-basis: 75%;
+    padding: 10rem 0;
+  }
+  .personal .nombre {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .personal #conocimiento {
-    font-size: 6rem;
+    font-size: 7rem;
     text-align: right;
+    font-weight: 300;
+  }
+  .personal .nombre #uriel {
+    justify-self: left;
   }
   .personal .nombre #alvarez {
+    justify-self: bottom;
     text-align: left;
     padding-left: 20rem;
   }
 
   .tecnologias {
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    flex-basis: 25%;
+    justify-content: flex-end;
+    text-align: left;
+    display: flex;
+    align-items: center;
   }
   .tecnologias p {
     font-size: 3.5rem;
   }
   .site_header::after {
     height: 80%;
-  }
-}
-@media (min-width: 1500px) {
-  .personal {
-    justify-content: space-around;
-  }
-  .personal .nombre {
-    padding-top: 5rem;
-  }
-  .personal #conocimiento {
-    font-size: 8rem;
-  }
-  .tecnologias p {
-    font-size: 4.5rem;
-  }
-  .site_header::after {
-    height: 75%;
   }
 }
 /***************Acerca de mi********************/
