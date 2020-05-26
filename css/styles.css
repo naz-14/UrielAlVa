@@ -167,8 +167,6 @@ body {
 .header_content {
   display: flex;
   flex-direction: column;
-  min-height: 88vh;
-  height: 88vh;
 }
 @media (min-width: 450px) {
   .inicio li {
@@ -187,6 +185,10 @@ body {
   .site_header {
     min-height: 80rem;
     height: 100vh;
+  }
+  .header_content {
+    min-height: 88vh;
+    height: 88vh;
   }
   .hamburguer {
     display: none;
