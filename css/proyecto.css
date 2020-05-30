@@ -1,0 +1,9 @@
+.site_header::after {
+  content: none;
+}
+@media (min-width: 1200px) {
+  .site_header {
+    height: auto;
+    min-height: auto;
+  }
+}
