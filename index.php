@@ -47,7 +47,7 @@
             <a href="proyecto.php?proyecto=manage">
               <h4>Manage Landing page</h4>
               <div class="img_portafolio">
-                <img src="img/manage.PNG" alt="" />
+                <img src="img/manage.png" alt="" />
               </div>
             </a>
           </div>
@@ -55,7 +55,7 @@
             <a href="proyecto.php?proyecto=pitscript">
               <h4>Pitscript</h4>
               <div class="img_portafolio">
-                <img src="img/pit.PNG" alt="" />
+                <img src="img/pit.png" alt="" />
               </div>
             </a>
           </div>
@@ -63,7 +63,7 @@
             <a href="proyecto.php?proyecto=slider">
               <h4>Slider With Vanilla JavaScript</h4>
               <div class="img_portafolio">
-                <img src="img/slider.PNG" alt="" />
+                <img src="img/slider.png" alt="" />
               </div>
             </a>
           </div>

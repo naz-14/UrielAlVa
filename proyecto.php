@@ -22,46 +22,47 @@
   $proyects = array (
     "manage" => array(
       "titulo"=> "Manage Landing Page",
-      "subtitulo" => "subtitulo aqui",
+      "subtitulo" => "Pagina estatica con slider",
       "imagen" => "img/manage.png",
-      "descripcion" => "Este proyecto fue tomado desde La pagina FrontendMentor.com. Lo hice sin tener el archivo del proyecto las medidas requeridas en esté fueron 367px para movil y 1440px para escritorio.",
-      "descripcionDos" => "Las tecnologias usadas en este proyecto fueron HTML5, CSS3 (Sass como preprocesador) y Javascript Vanilla, tambien se uso la libreria de Swiper para la parte del slider de testimoniales, el menu movil fue hecho unicamente con JavaScript y CSS desarrollado completamente desde cero.",
+      "descripcion" => "Este proyecto fue tomado desde La pagina FrontendMentor.com. Lo hice sin tener el archivo del proyecto las medidas requeridas en esté fueron 367px para móvil y 1440px para escritorio.",
+      "descripcionDos" => "Las tecnologías utilizadas en este proyecto fueron Java Script Vanilla, Css(Sass), Y HTML5, se uso también la librería Swiper para el funcionamiento del slider",
       "git" => "https://github.com/naz-14/manageLandingPage",
       "web" => "https://wizardly-stonebraker-2667ef.netlify.app/"
     ),
     "pitscript" => array(
       "titulo"=> "Pitscript",
-      "subtitulo" => "subtitulo aqui",
+      "subtitulo" => "Pagina de desarrollo Web",
       "imagen" => "img/pit.png",
-      "descripcion" => "PitScript es un proyecto en el cual estoy trabajando junto con mi novia Andrea Avila, ella elaboro el diseño completamente y yo hice el desarrollo web, las diagonales estan hechas con contenedores que tienen diferentes bordes en CSS3 y posicionados de forma absoluta para poder colocarlos en su lugar correspondiente, se considero poder hacer las diagonales con skew pero no cumplia con el funcionamiento requerido en el diseño. La interaccion del menu en la version movil fue desarrollada desde cero por mi con Vanilla JavaScript.",
-      "descripcionDos" => "Las tecnologias utilizadas son HTML5, CSS3 Y Vanilla JavaScript",
+      "descripcion" => "PitScript es un proyecto, en el cual estoy trabajando aun con mi novia, ella realizo el diseño y yo lo programe, la pagina tiene medidas adaptadas a la mayoría de dispositivos(PC, iPad y Móvil)",
+      "descripcionDos" => "Las tecnologías utilizadas son HTML5, CSS3 Y Vanilla JavaScript, para hacer las diagonales en cada sección se hicieron cajas con bordes de diferentes tamaños, se considero hacer las diagonales con skew pero no cumplía con los requerimientos necesarios para el proyecto.<br>
+      <small>(El proyecto no esta disponible en github ya que es privado)</small>",
       "git" => "",
       "web" => "https://naughty-goodall-88d25c.netlify.app/"
     ),
     "slider" => array(
       "titulo" => "Slider Con JavaScript Vanilla",
-      "subtitulo" => "subtitulo aqui",
+      "subtitulo" => "",
       "imagen" => "img/slider.png",
-      "descripcion" => "Este proyecto fue tomado desde FrontendMentor.io. El enfoque de este proyecto es unicamente desarrollar un slider con botones, los requerimentos de este proyecto eran unicamente manejar dos elementos con el slider, sin embargo decidi hacer un codigo desde cero el cual puede ser completamente reutilizable y escalable siempre y cuando se mantenga la estructura diseñada por mi, el frontend tambien lo desarrolle con solo los archivos png del diseño  respetando las dimensiones 367px movil y 1440px escritorio",
-      "descripcionDos" => "descripcion dos",
+      "descripcion" => "Este proyecto fue tomado desde FrontendMentor.io. El enfoque de este proyecto es únicamente desarrollar un slider con botones, los requerimientos de este proyecto eran únicamente manejar dos elementos con el slider, sin embargo decidí hacer un código desde cero el cual puede ser completamente reutilizable y escalable siempre y cuando se mantenga la estructura diseñada por mi, el frontend también lo desarrolle con solo los archivos png del diseño  respetando las dimensiones 367px móvil y 1440px escritorio",
+      "descripcionDos" => "Las tecnologías utilizadas fueron HTML5 Css3 Y Vanilla Java Script",
       "git" => "https://github.com/naz-14/mentor_quotes",
       "web" => "https://affectionate-hermann-99b382.netlify.app/"
     ),
     "listings" => array(
-      "titulo" => "Job Listings with Vanilla Filter by Tag",
-      "subtitulo" => "subtitulo aqui",
+      "titulo" => "Job Listings",
+      "subtitulo" => " con Filtro por tag en Vanilla JS",
       "imagen" => "img/joblistings.png",
-      "descripcion" => "Este proyecto ha sido el que mas me ha costado desarrollar, el proyecto fue tomado desde frontendmentor.io, y el objetivo era solo hacer la parte de frontend, sin embargo senti la curiosidad de llevar acabo el desarrollo de un filtro de contenidos por tag, en la pagina cada elemento tiene sus tags correspondientes y el objetivo era poder filtrar los contenidos dependiendo el tag que presiones.",
-      "descripcionDos"=> "Este proyecto fue desarrollado en la parte de frontend con HTML5 CSS3(SASS) y Javascript, La pagina al tener muchos elementos por mostrar en el index, fue desarrollada con php para consumir un archivo json y que el contenido se muestre directamente desde esa fuente segun los elementos que esten registrados ahi. El desarrollo para los filtros fue hecho desde cero para practicar mi conocimiento en el desarrollo de aplicaciones con JavaScript",
+      "descripcion" => "Este proyecto ha sido el que mas me ha costado desarrollar, el proyecto fue tomado desde frontendmentor.io, y el objetivo era solo hacer la parte de frontend, sin embargo sentí la curiosidad de llevar acabo el desarrollo de un filtro de contenidos por tag, en la pagina cada elemento tiene sus tags correspondientes y el objetivo era poder filtrar los contenidos dependiendo el tag que presiones.",
+      "descripcionDos"=> "Este proyecto fue desarrollado en la parte de frontend con HTML5 CSS3(SASS) y Javascript Vanilla, La pagina al tener muchos elementos por mostrar en el index, fue desarrollada con php para consumir un archivo json y que el contenido se muestre directamente desde esa fuente según los elementos que estén registrados ahí. El desarrollo para los filtros fue hecho desde cero para practicar mi conocimiento en el desarrollo de aplicaciones con JavaScript",
       "git" => "https://github.com/naz-14/JobListingsWithFilterOnVanillaJS",
       "web" => "https://joblistingsuav.000webhostapp.com/"
     ),
     "webcamp" => array(
       "titulo" => "GdlWebCamp",
-      "subtitulo" => "subtitulo aqui",
+      "subtitulo" => "Pagina de venta de boletos para evento",
       "imagen" => "img/gdlwebcamp.png",
-      "descripcion" => "Este proyecto aun no esta concluido ya que es bastante grande, fue tomado de un curso de Udemy y el objetivo final es desarrollar una pagina para un evento en el cual se pueden vender boletos asi que se maneja una base de datos de usuarios registrados  y compras de boletos, la base de datos esta en MySQL y se consume con PHP. El frontend esta desarrollado con HTML5 Css3 Y Javascript, tambien esta planeado que el procesador de pagos de la pagina sea paypal.",
-      "descripcionDos" => "descripcion dos",
+      "descripcion" => "Este proyecto aun no esta concluido ya que es bastante grande, fue tomado de un curso de Udemy y el objetivo final es desarrollar una pagina para un evento, en la pagina se podrán adquirir los boletos dependiendo los días que quieras ingresar al evento y asi mismo podrás ingresar con tu usuario para poder revisar el registro de tus compras",
+      "descripcionDos" => "Las tecnologías usadas aqui, son, JavaScript para el frontend y partes del backend, PHP para consumir la base de datos, Css, HTML y la base de datos esta hecha en MySQL",
       "git" => "",
       "web" => ""
     )
