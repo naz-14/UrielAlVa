@@ -441,12 +441,16 @@ body {
 .portafolio_content .btn-vermas-container {
   margin-top: 5rem;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.portafolio_content button {
-  width: 100%;
-  padding: 2rem 3rem;
-  background-color: #902421;
+.portafolio_content .btn-vermas-container a {
+  text-decoration: none;
   color: #fff;
+  height: 100%;
+  background-color: #902421;
+  padding: 1.5rem 1rem;
 }
 @media (min-width: 1200px) {
   .contenedor_elementos {

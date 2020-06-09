@@ -17,12 +17,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <?php $proyecto= $_GET["proyecto"];
-    
-    if(isset($proyecto)){?>
-      <link rel="stylesheet" href="css/proyecto.css">
-    <?php } ?>
-    
   </head>
   <body>
     <header class="site_header" id="site_header">

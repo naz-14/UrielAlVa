@@ -16,7 +16,4 @@
     </footer>
   </body>
   <script src="js/main.js"></script>
-  <?php if(isset($proyecto)){ ?>
-      <script src="js/proyecto.js"></script>
-    <?php } ?>
 </html>

@@ -40,7 +40,7 @@
     </section>
     <main class="portafolio" id="portafolio">
       <div class="portafolio_content contenedor" id="portafolio_content">
-        <h2>Portafolio</h2>
+        <h2>Algunos Proyectos</h2>
         <h3>Proyectos Frontend</h3>
         <div class="contenedor_elementos">
           <div class="elemento_portafolio">
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="btn-vermas-container">
-          <button id="btn-vermas">Ver todos</button>
+          <a href="portafolio.php">Ver todos</a>
         </div>
       </div>
     </main>
