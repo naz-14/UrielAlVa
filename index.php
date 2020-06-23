@@ -109,7 +109,7 @@
               <input
                 type="text"
                 name="apellido"
-                id="pellido"
+                id="apellido"
                 placeholder="Apellido:"
               />
             </div>
@@ -119,6 +119,14 @@
                 name="email"
                 id="email"
                 placeholder="Correo Electronico:"
+              />
+            </div>
+              <div class="campo">
+              <input
+                type="text"
+                name="asunto"
+                id="asunto"
+                placeholder="Asunto:"
               />
             </div>
             <div class="campo">

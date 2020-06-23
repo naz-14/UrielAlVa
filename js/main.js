@@ -121,5 +121,55 @@
       barra.classList.remove("activo");
       barra_lateral.classList.remove("activo");
     }
+
+    //enviar email
+    const formularioContacto = document.querySelector('.formulario_contacto')
+
+    if (formularioContacto) {
+      formularioContacto.addEventListener('submit', leerFormulario)
+    }
+
+    function leerFormulario(e){
+      e.preventDefault()
+      const nombre = document.querySelector('#nombre').value.trim()
+      const apellido = document.querySelector('#apellido').value.trim()
+      const email = document.querySelector('#email').value.trim()
+      const asunto = document.querySelector('#asunto').value.trim()
+      const mensaje = document.querySelector('#mensaje').value.trim()
+
+      if (nombre == ''|| apellido == '' || email == '' || asunto == ''|| mensaje == ''){
+        alert('Se deben llenar todos los campos del formulario')
+      }else{
+        const datos = new FormData()
+        datos.append('nombre',nombre)
+        datos.append('apellido',apellido)
+        datos.append('email',email)
+        datos.append('asunto',asunto)
+        datos.append('mensaje',mensaje)
+        correo(datos)
+      }
+
+    }
+
+    function correo(datos) {
+      //llamado a ajax
+      //crear el objeto
+      const xhr = new XMLHttpRequest();
+      //abrir conexion
+      xhr.open("POST", "includes/functions/email.php", true);
+      //pasar los datos
+      xhr.onload = function () {
+        if (this.status === 200) {
+          const respuesta = (xhr.responseText);
+          if (respuesta == true) {
+            alert('El Correo se envio correctamente, en breve me pondren en contacto')
+          } else {
+            alert('Hubo un error al enviar el correo por favor contactame por otro medio, gracias!')
+          }
+        }
+      };
+      //enviar los datos
+      xhr.send(datos)
+    }
   });
 })();
