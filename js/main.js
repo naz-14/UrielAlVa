@@ -113,7 +113,6 @@
       link.addEventListener("click", navegacion);
     });
     function navegacion() {
-      event.preventDefault();
       var enlace = this.getAttribute("href");
       window.scrollTo(
         0,

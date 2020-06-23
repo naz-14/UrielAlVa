@@ -1,0 +1,22 @@
+.contenedor{
+  margin-bottom: 5rem;
+}
+.site_header{
+  min-height: auto;
+  height: auto;
+}
+.site_header::after{
+  content: none;
+}
+.site_nav .contenedor{
+  margin-bottom: 0;
+}
+.footer_content{
+  margin-bottom: 0;
+}
+@media (min-width: 1200px){
+  .site_header{
+    min-height: auto;
+    height: auto;
+  }
+}

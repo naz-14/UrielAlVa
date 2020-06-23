@@ -17,6 +17,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <?php $url = $_SERVER["REQUEST_URI"];
+      $urlArray = explode("/",$url);
+      $urlSize= sizeof($urlArray) - 1;?>
+      <?php if($urlArray[$urlSize] == "portafolio.php"){?>
+        <link rel="stylesheet" href="css/portafolio.css">
+      <?php }?>
   </head>
   <body>
     <header class="site_header" id="site_header">
@@ -24,24 +30,24 @@
         <nav class="site_nav" id="site_nav">
           <div class="contenedor" id="contenedor_opciones">
             <div class="inicio" id="inicio">
-              <a href="#site_header" id="inicio-bar" class="activo">
+              <a href="/" id="inicio-bar" class="activo">
                 <li>Inicio</li>
               </a>
-              <a href="#site_header" id="inicio-uriel">
+              <a href="/" id="inicio-uriel">
                 <li>Uriel A.</li>
               </a>
-              <a href="#site_header">
+              <a href="/">
                 <li id="uriel_bar">Uriel A.</li>
               </a>
             </div>
             <div class="opciones">
-              <a href="#acerca_de_mi">
+              <a href="index.php#acerca_de_mi">
                 <li>Acerca de mi</li>
               </a>
-              <a href="#portafolio">
+              <a href="portafolio.php">
                 <li>Portafolio</li>
               </a>
-              <a href="#contacto">
+              <a href="index.php#contacto">
                 <li>Contacto</li>
               </a>
             </div>
