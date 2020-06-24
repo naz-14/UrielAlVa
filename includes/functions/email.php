@@ -5,9 +5,9 @@
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
     $destino = 'urielcontactopersonal@gmail.com';
-    $header = 'De: ' . $nombre . ' ' .$apellido . '\r\n'.
-        'Correo: ' . ' ' . $email;
-    $envio = mail($destino, $asunto, $mensaje, $header);
+    $header = "Enviado desde personal";
+    $mensajeComp = "Nombre : {$nombre} Apellido: {$apellido} \n Correo: {$email} \n\n {$mensaje}";
+    $envio = mail($destino, $asunto, $mensajeComp, $header);
 
     if ($envio == true){
         $respuesta = true;

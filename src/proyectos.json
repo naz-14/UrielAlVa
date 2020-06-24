@@ -1,52 +1,47 @@
 {
   "manage":{
-  "titulo":"Manage Landing Page",
-  "subtitulo":"Pagina estatica con slider",
-  "imagen":"img\/manage.png",
-  "descripcion":"Este proyecto fue tomado desde La pagina FrontendMentor.com. Lo hice sin tener el archivo del proyecto las medidas requeridas en est\u00e9 fueron 367px para m\u00f3vil y 1440px para escritorio.",
-  "descripcionDos":"Las tecnolog\u00edas utilizadas en este proyecto fueron Java Script Vanilla, Css(Sass), Y HTML5, se uso tambi\u00e9n la librer\u00eda Swiper para el funcionamiento del slider",
-  "git":"https:\/\/github.com\/naz-14\/manageLandingPage",
-  "web":"https:\/\/wizardly-stonebraker-2667ef.netlify.app\/"
+    "titulo":"Manage Landing Page",
+    "subtitulo":"Pagina estatica con slider",
+    "imagen":"img\/manage.png",
+    "descripcion":"Este proyecto fue tomado desde La pagina FrontendMentor.com. Lo hice sin tener el archivo del proyecto las medidas requeridas en est\u00e9 fueron 367px para m\u00f3vil y 1440px para escritorio.",
+    "descripcionDos":"Las tecnolog\u00edas utilizadas en este proyecto fueron Java Script Vanilla, Css(Sass), Y HTML5, se uso tambi\u00e9n la librer\u00eda Swiper para el funcionamiento del slider",
+    "git":"https:\/\/github.com\/naz-14\/manageLandingPage",
+    "web":"https:\/\/wizardly-stonebraker-2667ef.netlify.app\/"
   },
   "pitscript":{
-  "titulo":"Pitscript",
-  "subtitulo":"Pagina de desarrollo Web",
-  "imagen":"img\/pit.png",
-  "descripcion":"PitScript es un proyecto, en el cual estoy trabajando aun con mi novia, ella realizo el dise\u00f1o y yo lo programe, la pagina tiene medidas adaptadas a la mayor\u00eda de dispositivos(PC, iPad y M\u00f3vil)",
-  "descripcionDos":"Las tecnolog\u00edas utilizadas son HTML5, CSS3 Y Vanilla JavaScript, para hacer las diagonales en cada secci\u00f3n se hicieron cajas con bordes de diferentes tama\u00f1os, se considero hacer las diagonales con skew pero no cumpl\u00eda con los requerimientos necesarios para el proyecto. \n (El proyecto no esta disponible en github ya que es privado)<\/small>",
-  "git":"",
-  "web":"https:\/\/naughty-goodall-88d25c.netlify.app\/"
+    "titulo":"Pitscript",
+    "subtitulo":"Pagina de desarrollo Web",
+    "imagen":"img\/pit.png",
+    "descripcion":"PitScript es un proyecto, en el cual estoy trabajando aun con mi novia, ella realizo el dise\u00f1o y yo lo programe, la pagina tiene medidas adaptadas a la mayor\u00eda de dispositivos(PC, iPad y M\u00f3vil)",
+    "descripcionDos":"Las tecnolog\u00edas utilizadas son HTML5, CSS3 Y Vanilla JavaScript, para hacer las diagonales en cada secci\u00f3n se hicieron cajas con bordes de diferentes tama\u00f1os, se considero hacer las diagonales con skew pero no cumpl\u00eda con los requerimientos necesarios para el proyecto. \n (El proyecto no esta disponible en github ya que es privado)<\/small>",
+    "git":"",
+    "web":"https:\/\/naughty-goodall-88d25c.netlify.app\/"
   },
   "slider":{
-  "titulo":"Slider Con JavaScript Vanilla",
-  "subtitulo":"",
-  "imagen":"img\/slider.png",
-  "descripcion":"Este proyecto fue tomado desde FrontendMentor.io. El enfoque de este proyecto es \u00fanicamente desarrollar un slider con botones, los requerimientos de este proyecto eran \u00fanicamente manejar dos elementos con el slider, sin embargo decid\u00ed hacer un c\u00f3digo desde cero el cual puede ser completamente reutilizable y escalable siempre y cuando se mantenga la estructura dise\u00f1ada por mi, el frontend tambi\u00e9n lo desarrolle con solo los archivos png del dise\u00f1o respetando las dimensiones 367px m\u00f3vil y 1440px escritorio",
-  "descripcionDos":"Las tecnolog\u00edas utilizadas fueron HTML5 Css3 Y Vanilla Java Script",
-  "git":"https:\/\/github.com\/naz-14\/mentor_quotes",
-  "web":"https:\/\/affectionate-hermann-99b382.netlify.app\/"
+    "titulo":"Slider Con JavaScript Vanilla",
+    "subtitulo":"",
+    "imagen":"img\/slider.png",
+    "descripcion":"Este proyecto fue tomado desde FrontendMentor.io. El enfoque de este proyecto es \u00fanicamente desarrollar un slider con botones, los requerimientos de este proyecto eran \u00fanicamente manejar dos elementos con el slider, sin embargo decid\u00ed hacer un c\u00f3digo desde cero el cual puede ser completamente reutilizable y escalable siempre y cuando se mantenga la estructura dise\u00f1ada por mi, el frontend tambi\u00e9n lo desarrolle con solo los archivos png del dise\u00f1o respetando las dimensiones 367px m\u00f3vil y 1440px escritorio",
+    "descripcionDos":"Las tecnolog\u00edas utilizadas fueron HTML5 Css3 Y Vanilla Java Script",
+    "git":"https:\/\/github.com\/naz-14\/mentor_quotes",
+    "web":"https:\/\/affectionate-hermann-99b382.netlify.app\/"
   },
   "listings":{
-  "titulo":"Job Listings",
-  "subtitulo":" con Filtro por tag en Vanilla JS",
-  "imagen":"img\/joblistings.png",
-  "descripcion":"Este proyecto ha sido el que mas me ha costado desarrollar, el proyecto fue tomado desde frontendmentor.io, y el objetivo era solo hacer la parte de frontend, sin embargo sent\u00ed la curiosidad de llevar acabo el desarrollo de un filtro de contenidos por tag, en la pagina cada elemento tiene sus tags correspondientes y el objetivo era poder filtrar los contenidos dependiendo el tag que presiones.",
-  "descripcionDos":"Este proyecto fue desarrollado en la parte de frontend con HTML5 CSS3(SASS) y Javascript Vanilla, La pagina al tener muchos elementos por mostrar en el index, fue desarrollada con php para consumir un archivo json y que el contenido se muestre directamente desde esa fuente seg\u00fan los elementos que est\u00e9n registrados ah\u00ed. El desarrollo para los filtros fue hecho desde cero para practicar mi conocimiento en el desarrollo de aplicaciones con JavaScript",
-  "git":"https:\/\/github.com\/naz-14\/JobListingsWithFilterOnVanillaJS",
-  "web":"https:\/\/joblistingsuav.000webhostapp.com\/"
+    "titulo":"Job Listings",
+    "subtitulo":" con Filtro por tag en Vanilla JS",
+    "imagen":"img\/joblistings.png",
+    "descripcion":"Este proyecto ha sido el que mas me ha costado desarrollar, el proyecto fue tomado desde frontendmentor.io, y el objetivo era solo hacer la parte de frontend, sin embargo sent\u00ed la curiosidad de llevar acabo el desarrollo de un filtro de contenidos por tag, en la pagina cada elemento tiene sus tags correspondientes y el objetivo era poder filtrar los contenidos dependiendo el tag que presiones.",
+    "descripcionDos":"Este proyecto fue desarrollado en la parte de frontend con HTML5 CSS3(SASS) y Javascript Vanilla, La pagina al tener muchos elementos por mostrar en el index, fue desarrollada con php para consumir un archivo json y que el contenido se muestre directamente desde esa fuente seg\u00fan los elementos que est\u00e9n registrados ah\u00ed. El desarrollo para los filtros fue hecho desde cero para practicar mi conocimiento en el desarrollo de aplicaciones con JavaScript",
+    "git":"https:\/\/github.com\/naz-14\/JobListingsWithFilterOnVanillaJS",
+    "web":"https:\/\/joblistingsuav.000webhostapp.com\/"
   },
   "webcamp":{
-  "titulo":"GdlWebCamp",
-  "subtitulo":"Pagina de venta de boletos para evento",
-  "imagen":"img\/gdlwebcamp.png",
-  "descripcion":"Este proyecto aun no esta concluido ya que es bastante grande, fue tomado de un curso de Udemy y el objetivo final es desarrollar una pagina para un evento, en la pagina se podr\u00e1n adquirir los boletos dependiendo los d\u00edas que quieras ingresar al evento y asi mismo podr\u00e1s ingresar con tu usuario para poder revisar el registro de tus compras",
-  "descripcionDos":"Las tecnolog\u00edas usadas aqui, son, JavaScript para el frontend y partes del backend, PHP para consumir la base de datos, Css, HTML y la base de datos esta hecha en MySQL",
-  "git":"",
-  "web":""
-  },
-  "piedrapapeltijera":{
-  "titulo":"Piedra Papel O Tijera",
-  "subtitulo": "Vanilla Javascript",
-  "imagen" : "img\/ppt.png"
+    "titulo":"GdlWebCamp",
+    "subtitulo":"Pagina de venta de boletos para evento",
+    "imagen":"img\/gdlwebcamp.png",
+    "descripcion":"Este proyecto es el mas grande que he realizado, es una pagina en en donde se pueden comprar boletos, el proyecto fue tomado de un curso de Udemy y esta completo pero de momento no tengo servidor para poder subir la pagina, asi que solo esta disponible el github",
+    "descripcionDos":"Las tecnolog\u00edas usadas aqui, son, JavaScript para el frontend y partes del backend, PHP para consumir la base de datos, Css, HTML y la base de datos esta hecha en MySQL asi mismo, se incluyeron disitntas librerias como lightbox, colorbox para galerias de fotos, leaflet para el mapa de localizacion, RestApi de Paypal para procesar el pago de boletos etc.",
+    "git":"",
+    "web":""
   }
 }
